@@ -47,10 +47,24 @@ MobaXterm
   - Uncheck All Settings
   - Check "Use Private Key" - X:\<ruby-on-rails-vagrant>\.vagrant\machines\default\private_key
 
-## Launch Ruby
+## Editing and Creation
+
+### Prior to deployment
+Update setup-env.sh file with any local environment setting you want to be sourced.
+### Deployment
+Any updates you make will automatically be updated on your rails website once it
+has been saved to your local machine. If you wish to use any of the rails templates
+SSH into the virtualbox.
+
+Example:
+    $ cd /vagrant
+    $ rails generate controller NewController
+
+
+## Ruby Website
 
     Open Chrome or other browser
-    [Welcome Aboard](10.0.32.1:3000)
+    [Welcome Aboard](http://10.0.32.1:3000)
 
 ## Optional Development Tools
 
