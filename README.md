@@ -1,5 +1,5 @@
 # A Virtual Machine for Ruby on Rails
-
+For entertainment purposes only. If you want a great Vagrant Ruby on Rails deployment go to [railsbox](https://railsbox.io/)
 ## Introduction
 
 This project automates the setup of a development environment for creating a default frontend for Ruby on Rails itself. Using Vagrant and Virtualbox, simply "vagrant up" and begin editing your Rails Apps for a deployment.
