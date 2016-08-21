@@ -12,8 +12,7 @@ Core Deployment options available in ./Vagrantfile
 
 * [Vagrant](http://vagrantup.com)
 
-* [MobaXterm](http://mobaxterm.mobatek.net/)
-  - Recommended Windows install SSH
+* [MobaXterm](http://mobaxterm.mobatek.net/) - Recommended Windows install SSH
 
 ## How To Build The Virtual Machine - Linux
 
@@ -56,7 +55,7 @@ Any updates you make will automatically be updated on your rails website once it
 has been saved to your local machine. If you wish to use any of the rails templates
 SSH into the virtualbox.
 
-### Example:
+#### Example:
     $ cd /vagrant
     $ rails generate controller NewController
 
