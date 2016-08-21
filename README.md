@@ -16,13 +16,13 @@ Core Deployment options available in ./Vagrantfile
 
 ## How To Build The Virtual Machine - Linux
 
-    host $ git clone https://github.com/fp-programming/ruby-on-rails-vagrant.git
+    host $ git clone https://github.com/Finite-Programming/ruby-on-rails-vagrant.git
     host $ cd ruby-on-rails-vagrant
     host $ vagrant up
 
 ## How To Build The Virtual Machine - Windows
 
-    Download/Clone the Git repository fp-programming/ruby-on-rails-vagrant
+    Download/Clone the Git repository https://github.com/Finite-Programming/ruby-on-rails-vagrant
     Cmd$ cd X:\<ruby-on-rails-vagrant>\
     Cmd$ vagrant up
 
@@ -59,11 +59,39 @@ SSH into the virtualbox.
     $ cd /vagrant
     $ rails generate controller NewController
 
-
 ## Ruby Website
 
     Open Chrome or other browser
     [Welcome Aboard](http://10.0.32.1:3000)
+
+## More on Deployment
+Ruby On Rails Vagrant deploys a new rails template for 5.0.0.1. If you need a different
+rails deployment follow these steps.
+
+    * Run 'vagrant up' from your platform of choice
+    * Delete all but the core files from your /vagrant environment. Core Files:
+      - .vagrant
+      - bootstrap.sh
+      - MIT-LICENSE
+      - README.md
+      - Vagrantfile
+    * SSH into your virtual machine and run the new rails command
+      - $ rails _X.x.x.x_ new 'myapp'
+
+## Required Development Tools
+
+* Ruby 2.3
+
+* Rails 5.0.0.1
+
+* SQLite3
+
+* Nodejs
+
+* System dependencies for nokogiri, sqlite3
+
+* An ExecJS runtime
+
 
 ## Optional Development Tools
 
@@ -71,15 +99,13 @@ SSH into the virtualbox.
 
 * Git
 
-* Ruby 2.3
-
 * Bundler
 
-* SQLite3, MySQL, and Postgres
+* MySQL, and Postgres
 
 * Databases and users needed to run the Active Record test suite
 
-* System dependencies for nokogiri, sqlite3, mysql, mysql2, and pg
+* System dependencies for mysql, mysql2, and pg
 
 * Memcached
 
@@ -87,12 +113,11 @@ SSH into the virtualbox.
 
 * RabbitMQ
 
-* An ExecJS runtime
-
 ## Citations
 Ruby On Rails Vagrant was produced using the Rails Dev Box located [here](https://github.com/rails/rails-dev-box)
-* Slimmed down deployment for Ruby On Rails frontend
-* Updated to use systemd
+* Slimmed down deployment for Ruby On Rails requirements
+* Added functions to start Ruby on Rails using systemd
+* Added a "new" rails template for 5.0.0.1
 
 ## License
 
