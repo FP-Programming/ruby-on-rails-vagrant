@@ -18,23 +18,24 @@ Core Deployment options available in ./Vagrantfile
 ## How To Build The Virtual Machine - Linux
 
 Building the virtual machine:
-
--host $ git clone https://github.com/fp-programming/ruby-on-rails-vagrant.git
--host $ cd ruby-on-rails-vagrant
--host $ vagrant up
-
+'''
+host $ git clone https://github.com/fp-programming/ruby-on-rails-vagrant.git
+host $ cd ruby-on-rails-vagrant
+host $ vagrant up
+'''
 ## How To Build The Virtual Machine - Windows
-
--Download/Clone the Git repository fp-programming/ruby-on-rails-vagrant
--Cmd$ cd X:\<ruby-on-rails-vagrant>\
--Cmd$ vagrant up
-
+'''
+Download/Clone the Git repository fp-programming/ruby-on-rails-vagrant
+Cmd$ cd X:\<ruby-on-rails-vagrant>\
+Cmd$ vagrant up
+'''
 # After Installation SSH - Linux
-
--host $ vagrant ssh
--Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-55-generic x86_64)
--...
--vagrant@rails-dev-box:~$
+'''
+host $ vagrant ssh
+Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-55-generic x86_64)
+...
+vagrant@rails-dev-box:~$
+'''
 
 # After Installation SSH - Windows
 
