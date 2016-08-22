@@ -1,5 +1,6 @@
 # A Virtual Machine for Ruby on Rails
-For education and entertainment purposes only. If you want a great Vagrant Ruby on Rails deployment go to [railsbox](https://railsbox.io/)
+For educational and entertainment purposes only. There are some other, fancier deployment options such as [railsbox](http://railsbox.io) if you know what you're doing, but this will help get you through the [Rails Tutorial](https://www.railstutorial.org/book) with a proven environment that doesn't require a lot of knowledge in Linux to set up.
+
 ## Introduction
 
 This project automates the setup of a development environment for creating a default frontend for Ruby on Rails itself. Using Vagrant and Virtualbox, simply "vagrant up" and begin editing your Rails Apps for a deployment.
@@ -8,25 +9,21 @@ Core Deployment options available in ./Vagrantfile
 
 ## Requirements
 
+* [git](https://git-scm.com/downloads)
+
 * [VirtualBox](https://www.virtualbox.org)
 
 * [Vagrant](http://vagrantup.com)
 
-* [MobaXterm](http://mobaxterm.mobatek.net/) - Recommended Windows install SSH
 
-## How To Build The Virtual Machine - Linux
+## How To Build The Virtual Machine
+If you are using Windows, it is best to use GIT Bash for all terminal commands
 
     host $ git clone https://github.com/Finite-Programming/ruby-on-rails-vagrant.git
-    host $ cd ruby-on-rails-vagrant
+    host $ cd /path/to/install/ruby-on-rails-vagrant
     host $ vagrant up
 
-## How To Build The Virtual Machine - Windows
-
-    Download/Clone the Git repository https://github.com/Finite-Programming/ruby-on-rails-vagrant
-    Cmd$ cd X:\<ruby-on-rails-vagrant>\
-    Cmd$ vagrant up
-
-## After Installation SSH - Linux
+## After Installation SSH
 
     host $ vagrant ssh
     Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-55-generic x86_64)
@@ -34,22 +31,11 @@ Core Deployment options available in ./Vagrantfile
     vagrant@rails-dev-box:~$
 
 
-## After Installation SSH - Windows
-
-MobaXterm
-* Create new SSH Session
-  - Type: SSH
-  - Host: 127.0.0.1
-  - User: Vagrant
-  - Port: 2222
-* Advanced SSH Settings
-  - Uncheck All Settings
-  - Check "Use Private Key" - X:\<ruby-on-rails-vagrant>\.vagrant\machines\default\private_key
-
 ## Editing and Creation
 
 ### Prior to deployment
 Update setup-env.sh file with any local environment setting you want to be sourced.
+
 ### Deployment
 Any updates you make will automatically be updated on your rails website once it
 has been saved to your local machine. If you wish to use any of the rails templates
